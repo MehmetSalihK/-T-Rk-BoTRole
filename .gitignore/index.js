@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const TOKEN = "NDI5NzQ1ODg4MTUyNTE4Njcx.DcgpyQ.PyViJfV4Jvfq12kwYYl9aTMCo-E";
+const TOKEN = "NDQ1NjQxMTU5MjM1MzM4MjQw.DdtbRA.O8V8ZLlhFnPBUJf7fO7zH818qT4";
 const ownerID = "174565176492687361"
 const PREFIX = "-";
 
@@ -10,15 +10,15 @@ var bot = new Discord.Client();
 var servers = {};
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "📈à-rejoin📈").send(`**Bienvenue à** __**${member.guild.name}**__ **maintenant** __**${member.user.username}**__ **est avec nous!**`)
+    member.guild.channels.find("name", "genel").send(`__**${member.guild.name}**__ **şimdi** __**${member.user.username}**__ **bizimle beraber!**`)
 })
 
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "📉à-quitter📉").send(`__**${member.user.username}**__ **n'est plus sur notre serveur** __**${member.guild.name}**__`)
+    member.guild.channels.find("name", "genel").send(`__**${member.user.username}**__ **artık bizim sunucumuzda değil** __**${member.guild.name}**__`)
 })
 
 bot.on('guildMemberAdd', member => {
-    var role = member.guild.roles.find("name", "✓NDNG✓");
+    var role = member.guild.roles.find("name", "👤YENI👤");
     member.addRole(role)
 })
 
