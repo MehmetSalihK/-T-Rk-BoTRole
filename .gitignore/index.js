@@ -10,11 +10,11 @@ var bot = new Discord.Client();
 var servers = {};
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "genel").send(`__**${member.guild.name}**__ **şimdi** __**${member.user.username}**__ **bizimle beraber!**`)
+    member.guild.channels.find("name", "genel").send(`__**${member.guild.name}**__ **sunucu'ya katilan** __**${member.user.username}**__ **şimdi bizimle beraber!**`)
 })
 
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "genel").send(`__**${member.user.username}**__ **artık bizim sunucumuzda değil** __**${member.guild.name}**__`)
+    member.guild.channels.find("name", "genel").send(`__**${member.user.username}**__ **artık bizim sunucumuzda** __**${member.guild.name}**__ **değil**`)
 })
 
 bot.on('guildMemberAdd', member => {
